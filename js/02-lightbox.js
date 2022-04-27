@@ -31,4 +31,8 @@ function onGalleryItemClick(e) {
     console.log(e.target.classList.value);
 };
 
-var lightbox = new SimpleLightbox('.gallery a', { /* options */ });
+var lightbox = new SimpleLightbox('.gallery a', {
+    captions: true,
+    captionsData: "alt",
+    captionDelay: 250,
+});
